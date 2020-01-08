@@ -23,6 +23,8 @@ The package project defines a Component `Logo` in `src/App.tsx`:
     
     export const Logo = () => <LogoSvg className="App-logo"/>
 
+To build a publishable version of it, `npm run prepare`.
+
 ### 2. Import
 
 The importing project uses it in its own `src/App.tsx`:
@@ -30,6 +32,8 @@ The importing project uses it in its own `src/App.tsx`:
     import { Logo } from 'replicate-indirect-svg/lib/App'
 
     const App = () => <Logo/>
+
+To run it, `npm install && npm run start`
 
 ### 3. Compiled
 
