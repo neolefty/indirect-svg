@@ -1,0 +1,54 @@
+{
+  "name": "replicate-indirect-svg",
+  "description": "Replicate a problem with packaging SVGs that have been imported as ReactComponent",
+  "repository": {
+    "type": "npm/npm",
+    "url": "https://npmjs.com/package/replicate-indirect-svg"
+  },
+  "version": "0.1.2",
+  "private": false,
+  "license": "PUBLIC DOMAIN",
+  "homepage": "https://github.com/neolefty/indirect-svg",
+  "files": [
+    "/lib"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "copyfiles": "^2.1.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "npm run clean && npm run compile && npm run copy",
+    "clean": "rm -rf build lib",
+    "compile": "tsc -p tsconfig-publish.json",
+    "copy": "copyup \"src/**/*.svg\" \"src/**/*.css\" lib"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
