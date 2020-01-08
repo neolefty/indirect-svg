@@ -8,9 +8,13 @@
 > 
 > Check the render method of `Logo`.
 
+## Code
+
+Here are code excerpts, slightly simplified.
+
 ### 1. Package
 
-The package project defines a Component `Logo` in `src/App.tsx` (excerpt):
+The package project defines a Component `Logo` in `src/App.tsx`:
 
     import React from 'react'
     import {ReactComponent as LogoSvg} from './logo.svg'
@@ -19,7 +23,7 @@ The package project defines a Component `Logo` in `src/App.tsx` (excerpt):
 
 ### 2. Import
 
-The importing project uses it in its own `src/App.tsx` (excerpt):
+The importing project uses it in its own `src/App.tsx`:
 
     import { Logo } from 'replicate-indirect-svg/lib/App'
 
