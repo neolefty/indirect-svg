@@ -1,3 +1,5 @@
+Reproduction for [React Issue #17804](https://github.com/facebook/react/issues/17804).
+
 ## Two projects
 
 * `replicate-indirect-svg` &mdash; defines an NPM package [replicate-indirect-svg](https://www.npmjs.com/package/replicate-indirect-svg) that includes an SVG that has been imported using the pattern `import {ReactComponent as Foo} from "./foo.svg"`
