@@ -1,5 +1,11 @@
 Reproduction for [React Issue #17804](https://github.com/facebook/react/issues/17804).
 
+## Bug Report
+
+Probably related to https://github.com/facebook/create-react-app/issues/5276 &mdash; *Dynamic import doesn't work with SVG imported as ReactComponents*.
+
+~~https://github.com/facebook/react/issues/17804~~ &mdash; belongs in `create-react-app` instead.
+
 ## Two projects
 
 * `replicate-indirect-svg` &mdash; defines an NPM package [replicate-indirect-svg](https://www.npmjs.com/package/replicate-indirect-svg) that includes an SVG that has been imported using the pattern `import {ReactComponent as Foo} from "./foo.svg"`
